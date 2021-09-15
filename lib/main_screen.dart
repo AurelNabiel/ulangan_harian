@@ -111,19 +111,19 @@ Widget _fitureApp(String imgPath, String fiturename) {
           Container(
             child: Row(
               children: [
-                Hero(
-                  tag: imgPath,
-                  child: Image(
-                    image: AssetImage(imgPath),
-                    fit: BoxFit.cover,
-                    height: 10.0,
-                    width: 10.0,
-                  ),
-                ),
+                // Hero(
+                //   tag: imgPath,
+                //   child: Image(
+                //     image: AssetImage(imgPath),
+                //     fit: BoxFit.cover,
+                //     height: 10.0,
+                //     width: 10.0,
+                //   ),
+                // ),
                 SizedBox(
                   width: 10.0,
                 ),
-                Column(
+                Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
