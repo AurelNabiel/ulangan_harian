@@ -1,12 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ulangan_harian/main_screen.dart';
-import 'package:ulangan_harian/model/AlquranModel.dart';
-// import 'detail_screen.dart';
-
-void main() {
-  runApp(MyApp());
-}
+import 'package:ulangan_harian/model/HaditsModel.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -26,9 +19,9 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: Text("Wisata Bandung")),
         body: ListView.builder(
-          itemCount: data.length,
+          itemCount: HaditsData.length,
           itemBuilder: (context, index) {
-            final Alquran place = data[index];
+            final Hadits place = HaditsData[index];
 
             return InkWell(
               // onTap: () {
@@ -46,21 +39,17 @@ class MainScreen extends StatelessWidget {
                       flex: 2, 
                       child:
                        Column(
-                         children: [
-                           Text(
-                                  place.surat_name,
-                                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
+                        //  children: [
+                        //    Text(
+                        //           place.number,
+                        //           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
                                   
-                                ),
-                                SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                                  place.surat_terjemahan,
-                                  style: TextStyle(fontSize: 17.0, fontFamily: 'Oxygen'),
-                                  
-                                ),
-                         ],
+                        //         ),
+                        //         SizedBox(
+                        //       height: 10,
+                        //     ),
+                            
+                        //  ],
                        ),
                             
                             
@@ -73,10 +62,10 @@ class MainScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Text(
-                              place.surat_text,
-                              style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
-                            ),
+                            // Text(
+                            //   place.surat_text,
+                            //   style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
+                            // ),
                             
                           ],
                         ),
