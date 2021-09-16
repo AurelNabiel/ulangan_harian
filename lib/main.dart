@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:ulangan_harian/main_screen.dart';
 import 'package:ulangan_harian/detail.dart';
 import 'package:ulangan_harian/model/AlquranModel.dart';
@@ -54,14 +55,12 @@ class MainScreen extends StatelessWidget {
           ],
         ),
         
-        body: ListView.builder(
+
+        
+        body:ListView.builder(
           itemCount: data.length,
           itemBuilder: (context, index) {
             final Alquran place = data[index];
-
-
-
-
             return InkWell(
               // onTap: () {
               //   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -71,17 +70,18 @@ class MainScreen extends StatelessWidget {
               child: Container(
                 height: 90,
           margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(35.0)), color: Colors.black, boxShadow: [
+                decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(25.0)), color: Colors.black, boxShadow: [
             BoxShadow(color: Colors.black.withAlpha(300), blurRadius: 10.0),
           ]),
+
+
               child: Padding(
                         padding: EdgeInsets.all(10.0),
-
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
-                      flex: 1, 
+                      flex: 2, 
                       child:
                        Column(
                          children: [
@@ -95,7 +95,7 @@ class MainScreen extends StatelessWidget {
                             ),
                             Text(
                                   place.surat_terjemahan,
-                                  style: TextStyle(color: Colors.white, fontSize: 17.0, fontFamily: 'Oxygen'),
+                                  style: TextStyle(color: Colors.white, fontSize: 18.0, fontFamily: 'Oxygen'),
                                   
                                 ),
                          ],
@@ -124,6 +124,7 @@ class MainScreen extends StatelessWidget {
                   ],
                   
                 ),
+                
              
               )
               )
