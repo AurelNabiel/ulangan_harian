@@ -29,7 +29,7 @@ class MainScreen extends StatelessWidget {
     final double categoryHeight = size.height*0.30;
     return SafeArea(
         child: Scaffold(
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.lightGreen,
         appBar: AppBar(
           title:  const Center(
             child: Text(
@@ -38,7 +38,7 @@ class MainScreen extends StatelessWidget {
             ),
           ),
           elevation: 0,
-          backgroundColor: Colors.lightGreen,
+          backgroundColor: Colors.blueAccent,
           leading: IconButton(
               icon: Icon(Icons.menu_book, color: Colors.black),
               onPressed: () {},
@@ -51,25 +51,27 @@ class MainScreen extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.person, color: Colors.black),
               onPressed: () {},
-            )
+            ),
+           
           ],
         ),
         
 
-        
         body:ListView.builder(
           itemCount: data.length,
           itemBuilder: (context, index) {
             final Alquran place = data[index];
+           
             return InkWell(
               // onTap: () {
               //   Navigator.push(context, MaterialPageRoute(builder: (context) {
-              //     return Alquran(place: place,);
+              //     return DetailScreen(place: place,);
               //   }));
               // },
-              child: Container(
+        child: Container(
+              
                 height: 90,
-          margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          margin: const EdgeInsets.symmetric(horizontal:20 , vertical: 10),
                 decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(25.0)), color: Colors.black, boxShadow: [
             BoxShadow(color: Colors.black.withAlpha(300), blurRadius: 10.0),
           ]),
