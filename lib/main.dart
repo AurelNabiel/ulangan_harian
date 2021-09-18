@@ -29,7 +29,7 @@ class MainScreen extends StatelessWidget {
     final double categoryHeight = size.height*0.30;
     return SafeArea(
         child: Scaffold(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Color(0xFF21BFBD),
         appBar: AppBar(
           title:  const Center(
             child: Text(
@@ -37,8 +37,9 @@ class MainScreen extends StatelessWidget {
               style: TextStyle( color: Colors.black,fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
             ),
           ),
+          
           elevation: 0,
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xFF21BFBD),
           leading: IconButton(
               icon: Icon(Icons.menu_book, color: Colors.black),
               onPressed: () {},
@@ -61,7 +62,7 @@ class MainScreen extends StatelessWidget {
           itemCount: data.length,
           itemBuilder: (context, index) {
             final Alquran place = data[index];
-           
+            final Alquran Ayat = data[index];
             return InkWell(
               // onTap: () {
               //   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -72,7 +73,7 @@ class MainScreen extends StatelessWidget {
               
                 height: 90,
           margin: const EdgeInsets.symmetric(horizontal:20 , vertical: 10),
-                decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(25.0)), color: Colors.black, boxShadow: [
+                decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(25.0)), color: Colors.white, boxShadow: [
             BoxShadow(color: Colors.black.withAlpha(300), blurRadius: 10.0),
           ]),
 
@@ -89,7 +90,7 @@ class MainScreen extends StatelessWidget {
                          children: [
                            Text(
                                   place.surat_name,
-                                  style: TextStyle(color: Colors.white,fontSize: 20.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
+                                  style: TextStyle(color: Colors.black,fontSize: 20.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
                                   
                                 ),
                                 SizedBox(
@@ -97,7 +98,7 @@ class MainScreen extends StatelessWidget {
                             ),
                             Text(
                                   place.surat_terjemahan,
-                                  style: TextStyle(color: Colors.white, fontSize: 18.0, fontFamily: 'Oxygen'),
+                                  style: TextStyle(color: Colors.black, fontSize: 18.0, fontFamily: 'Oxygen'),
                                   
                                 ),
                          ],
@@ -116,7 +117,7 @@ class MainScreen extends StatelessWidget {
                           children: [
                             Text(
                               place.surat_text,
-                              style: TextStyle(color: Colors.white, fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
+                              style: TextStyle(color: Colors.black, fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
                             ),
                             
                           ],

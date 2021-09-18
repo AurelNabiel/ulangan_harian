@@ -24,36 +24,33 @@ class MainScreen extends StatelessWidget {
             final Hadits place = HaditsData[index];
 
             return InkWell(
-              // onTap: () {
-              //   Navigator.push(context, MaterialPageRoute(builder: (context) {
-              //     return Alquran(place: place,);
-              //   }));
-              // },
-              child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                // onTap: () {
+                //   Navigator.push(context, MaterialPageRoute(builder: (context) {
+                //     return Alquran(place: place,);
+                //   }));
+                // },
+                child: Padding(
+              padding: EdgeInsets.all(8.0),
               child: Card(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
-                      flex: 2, 
-                      child:
-                       Column(
-                        //  children: [
-                        //    Text(
-                        //           place.number,
-                        //           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
-                                  
-                        //         ),
-                        //         SizedBox(
-                        //       height: 10,
-                        //     ),
-                            
-                        //  ],
-                       ),
-                            
-                            
-                       ),
+                      flex: 2,
+                      child: Column(
+                          //  children: [
+                          //    Text(
+                          //           place.number,
+                          //           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
+
+                          //         ),
+                          //         SizedBox(
+                          //       height: 10,
+                          //     ),
+
+                          //  ],
+                          ),
+                    ),
                     Expanded(
                       flex: 2,
                       child: Padding(
@@ -66,20 +63,15 @@ class MainScreen extends StatelessWidget {
                             //   place.surat_text,
                             //   style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
                             // ),
-                            
                           ],
                         ),
                       ),
                     ),
                   ],
-                  
                 ),
               ),
-              )
-            );
+            ));
           },
         ));
   }
 }
-
-
