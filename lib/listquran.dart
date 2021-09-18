@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ulangan_harian/model/HaditsModel.dart';
+import 'package:ulangan_harian/detailquran.dart';
+import 'package:ulangan_harian/model/AlquranModel.dart';
 import 'package:ulangan_harian/main.dart';
 
-class ListHadist extends StatelessWidget {
+class ListQuran extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -40,10 +41,9 @@ class ListHadist extends StatelessWidget {
         
 
         body:ListView.builder(
-          itemCount: HaditsData.length,
+          itemCount: data.length,
           itemBuilder: (context, index) {
-            final Hadits place = HaditsData[index];
-            
+            final Alquran place = data[index];
             return InkWell(
               // onTap: () {
               //   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -70,7 +70,7 @@ class ListHadist extends StatelessWidget {
                        Column(
                          children: [
                            Text(
-                                  place.arab,
+                                  place.surat_name,
                                   style: TextStyle(color: Colors.black,fontSize: 20.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
                                   
                                 ),
@@ -78,7 +78,7 @@ class ListHadist extends StatelessWidget {
                               height: 10,
                             ),
                             Text(
-                                  place.id,
+                                  place.surat_terjemahan,
                                   style: TextStyle(color: Colors.black, fontSize: 18.0, fontFamily: 'Oxygen'),
                                   
                                 ),
@@ -96,10 +96,10 @@ class ListHadist extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            // Text(
-                            //   place.surat_text,
-                            //   style: TextStyle(color: Colors.black, fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
-                            // ),
+                            Text(
+                              place.surat_text,
+                              style: TextStyle(color: Colors.black, fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
+                            ),
                             
                           ],
                         ),
