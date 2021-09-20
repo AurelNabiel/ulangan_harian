@@ -40,19 +40,47 @@ var dataPagi = [
   Pagi(
     id: 2,
     arabic:
-        'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ \nقُلْ هُوَ اللَّهُ أَحَدٌ . اللَّهُ الصَّمَدُ . لَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌبِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ . مِن شَرِّ مَا خَلَقَ . وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ . وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ . وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ   بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ  قُلْ أَعُوذُ بِرَبِّ النَّاسِ . مَلِكِ النَّاسِ . إِلَهِ النَّاسِ . مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ . الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ . مِنَ الْجِنَّةِ وَ النَّاسِ',
+      'قُلْ هُوَ ٱللَّهُ أَحَدٌ, ٱللَّهُ ٱلصَّمَدُ, لَمْ يَلِدْ وَلَمْ يُولَدْ, وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ',
     arabic_latin: '',
     faedah:
         'Siapa yang mengucapkannya masing-masing tiga kali ketika pagi dan petang, maka segala sesuatu akan dicukupkan untuknya. [HR. Abu Daud no. 5082, Tirmidzi no. 3575. Al Hafizh Abu Thohir mengatakan bahwa sanad hadits ini hasan]',
-    narrator: 'Q.S. Al Ikhlas: 1-4->Q.S. Al Falaq: 1-5 QS.-> An Naas: 1-6',
+    narrator: 'Q.S. Al Ikhlas: 1-4',
     note: 'Dibaca 3x',
-    title: 'Membaca Surah Al-Ikhlas, Al-Falaq dan An-Nas',
+    title: 'Membaca Surah Al-Ikhlass',
     translated_id:
-        'Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang. Katakanlah: Dialah Allah, Yang Maha Esa. Allah adalah ilah yang bergantung kepada-Nya segala urusan. Dia tidak beranak dan tiada pula diperanakkan, dan tidak ada seorang pun yang setara dengan Dia.Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang. Katakanlah: Aku berlindung kepada Rabb yang menguasai Shubuh, dari kejahatan makhluk-Nya, dan dari kejahatan malam apabila telah gelap gulita, dan dari kejahatan-kejahatan wanita tukang sihir yang menghembus pada buhul-buhul, dan dari kejahatan orang yang dengki apabila ia dengki.Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang. Katakanlah: Aku berlindung kepada Rabb manusia. Raja manusia. Sembahan manusia, dari kejahatan (bisikan) syaitan yang biasa bersembunyi, yang membisikkan (kejahatan) ke dalam dada manusia, dari jin dan manusia.',
+        'Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang. Katakanlah: Dialah Allah, Yang Maha Esa. Allah adalah ilah yang bergantung kepada-Nya segala urusan. Dia tidak beranak dan tiada pula diperanakkan, dan tidak ada seorang pun yang setara dengan Dia.',
+    time: '',
+  ),
+   Pagi(
+    id: 3,
+    arabic:
+      'قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِۙ, مِنْ شَرِّ مَا خَلَقَۙ, وَمِنْ شَرِّ غَاسِقٍ اِذَا وَقَبَۙ, وَمِنْ شَرِّ النَّفّٰثٰتِ فِى الْعُقَدِۙ, وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ',
+        arabic_latin: '',
+    faedah:
+        'Siapa yang mengucapkannya masing-masing tiga kali ketika pagi dan petang, maka segala sesuatu akan dicukupkan untuknya. [HR. Abu Daud no. 5082, Tirmidzi no. 3575. Al Hafizh Abu Thohir mengatakan bahwa sanad hadits ini hasan]',
+    narrator: 'Q.S. Al Falaq: 1-5',
+    note: 'Dibaca 3x',
+    title: 'Membaca Surah Al-Falaq',
+    translated_id:
+        'Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang. Katakanlah: Aku berlindung kepada Rabb yang menguasai Shubuh, dari kejahatan makhluk-Nya, dan dari kejahatan malam apabila telah gelap gulita, dan dari kejahatan-kejahatan wanita tukang sihir yang menghembus pada buhul-buhul, dan dari kejahatan orang yang dengki apabila ia dengki.',
+    time: '',
+  ),
+   Pagi(
+    id: 4,
+    arabic:
+    'قُلْ اَعُوْذُ بِرَبِّ النَّاسِ, مَلِكِ النَّاسِۙ, اِلٰهِ النَّاسِۙ, مِنۡ شَرِّ الۡوَسۡوَاسِ  ۙ الۡخَـنَّاسِا, لَّذِىۡ يُوَسۡوِسُ فِىۡ صُدُوۡرِ النَّاسِۙ, مِنَ الۡجِنَّةِ وَالنَّاسِ',
+       arabic_latin: '',
+    faedah:
+        'Siapa yang mengucapkannya masing-masing tiga kali ketika pagi dan petang, maka segala sesuatu akan dicukupkan untuknya. [HR. Abu Daud no. 5082, Tirmidzi no. 3575. Al Hafizh Abu Thohir mengatakan bahwa sanad hadits ini hasan]',
+    narrator: 'QS. An Naas: 1-6',
+    note: 'Dibaca 3x',
+    title: 'An-Nas',
+    translated_id:
+        'Katakanlah: Aku berlindung kepada Rabb manusia. Raja manusia. Sembahan manusia, dari kejahatan (bisikan) syaitan yang biasa bersembunyi, yang membisikkan (kejahatan) ke dalam dada manusia, dari jin dan manusia.',
     time: '',
   ),
   Pagi(
-    id: 3,
+    id: 5,
     arabic:
         'أَ صْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِيْ هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوْذُ بِكَ مِنْ شَرِّ مَا فِيْ هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوْذُ بِكَ مِنَ الْكَسَلِ وَسُوْءِ الْكِبَرِ، رَبِّ أَعُوْذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',
     arabic_latin:
@@ -67,7 +95,7 @@ var dataPagi = [
     time: 'pagi',
   ),
   Pagi(
-    id: 5,
+    id: 6,
     arabic:
         'اَللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوْتُ وَإِلَيْكَ النُّشُوْرُ',
     arabic_latin:
@@ -112,7 +140,7 @@ var dataPagi = [
     time: 'pagi',
   ),
   Pagi(
-    id: 10,
+    id: 9,
     arabic:
         'اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَاْلآخِرَةِ، اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِيْنِيْ وَدُنْيَايَ وَأَهْلِيْ وَمَالِيْ اللَّهُمَّ اسْتُرْ عَوْرَاتِى وَآمِنْ رَوْعَاتِى. اَللَّهُمَّ احْفَظْنِيْ مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِيْ، وَعَنْ يَمِيْنِيْ وَعَنْ شِمَالِيْ، وَمِنْ فَوْقِيْ، وَأَعُوْذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِيْ',
     arabic_latin:
@@ -127,7 +155,7 @@ var dataPagi = [
     time: '',
   ),
   Pagi(
-    id: 11,
+    id: 10,
     arabic:
         'اَللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَاْلأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيْكَهُ، أَشْهَدُ أَنْ لاَ إِلَـهَ إِلاَّ أَنْتَ، أَعُوْذُ بِكَ مِنْ شَرِّ نَفْسِيْ، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِيْ سُوْءًا أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ',
     arabic_latin:
@@ -142,7 +170,7 @@ var dataPagi = [
     time: '',
   ),
   Pagi(
-    id: 12,
+    id: 11,
     arabic:
         'بِسْمِ اللَّهِ الَّذِى لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ فِى الأَرْضِ وَلاَ فِى السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',
     arabic_latin:
@@ -157,7 +185,7 @@ var dataPagi = [
     time: '',
   ),
   Pagi(
-    id: 13,
+    id: 12,
     arabic:
         'رَضِيْتُ بِاللهِ رَبًّا، وَبِاْلإِسْلاَمِ دِيْنًا، وَبِمُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا',
     arabic_latin:
