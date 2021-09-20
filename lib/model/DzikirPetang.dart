@@ -1,27 +1,29 @@
 class Petang {
-  int? id;
-  String? arabic;
-  String? arabic_latin;
-  String? faedah;
-  String? narrator;
-  String? note;
-  String? title;
-  String? translated_id;
-  String? time;
+  int id;
+  String arabic;
+  String arabic_latin;
+  String faedah;
+  String narrator;
+  String note;
+  String title;
+  String translated_id;
+  String time;
 
-  Petang(
-      {this.id,
-      this.arabic,
-      this.arabic_latin,
-      this.faedah,
-      this.narrator,
-      this.note,
-      this.time,
-      this.title,
-      this.translated_id});
+  Petang({
+    required  this.id,
+    required  this.arabic,
+    required  this.arabic_latin,
+    required  this.faedah,
+    required  this.narrator,
+    required  this.note,
+    required  this.time,
+    required  this.title,
+    required  this.translated_id
+    });
 }
 
-var dataZikirPetang = [
+
+var dataPetang = [
   Petang(
     id: 1,
     arabic:
