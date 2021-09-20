@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
               color: Color(0xFF21BFBD),
               image: DecorationImage(
                 alignment: Alignment.centerLeft,
-                image: AssetImage("assets/images/shade.png"),
+                image: AssetImage("assets/image/shade.png"),
               ),
             ),
           ),
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                         color: Color(0xFFF2BEA1),
                         shape: BoxShape.circle,
                       ),
-                      // child: SvgPicture.asset("assets/icons/menu.svg"),
+                      child: Icon(Icons.menu),
                     ),
                   ),
                   Text(
