@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/model/HaditsModel.dart';
 import 'package:ulangan_harian/main.dart';

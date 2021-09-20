@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/detailquran.dart';
 import 'package:ulangan_harian/model/AlquranModel.dart';
@@ -57,8 +56,6 @@ class ListQuran extends StatelessWidget {
                 decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(25.0)), color: Colors.white, boxShadow: [
             BoxShadow(color: Colors.black.withAlpha(300), blurRadius: 10.0),
           ]),
-
-
               child: Padding(
                         padding: EdgeInsets.all(10.0),
                 child: Row(

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ulangan_harian/model/DzikirPagi.dart';
+import 'package:ulangan_harian/model/DzikirPetang.dart';
 import 'package:ulangan_harian/main.dart';
 
 
-class ListDzikirPagi extends StatelessWidget {
+class ListDzikirPetang extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -43,9 +43,9 @@ class ListDzikirPagi extends StatelessWidget {
          
        padding: EdgeInsets.symmetric(vertical: 30.0),
       //  scrollDirection: Axis.horizontal,
-       itemCount: dataPagi.length,
+       itemCount: dataPetang.length,
        itemBuilder: (context, index) {
-         final Pagi place = dataPagi[index];
+         final Petang place = dataPetang[index];
 
             return InkWell(
               // onTap: () {
@@ -54,7 +54,7 @@ class ListDzikirPagi extends StatelessWidget {
               //   }));
               // },
         child: Container(
-               height: 800,
+               height: 900,
                         padding: EdgeInsets.all(20.0),
                         margin: const EdgeInsets.symmetric(horizontal:50 , vertical: 40),
                         decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20.0)), color: Colors.white, boxShadow: [
