@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/model/AlquranModel.dart';
 
@@ -36,6 +35,11 @@ class ListQuran extends StatelessWidget {
                 ),
               ],
             ),
+
+
+      
+                                  
+
             body: ListView.builder(
               itemCount: data.length,
               itemBuilder: (context, index) {
@@ -87,6 +91,7 @@ class ListQuran extends StatelessWidget {
                                           fontFamily: 'Oxygen'),
                                     ),
                                   ],
+
                                 ),
                               ),
                               Expanded(
