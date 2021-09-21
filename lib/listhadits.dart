@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ulangan_harian/detailhadits.dart';
 import 'package:ulangan_harian/model/HaditsModel.dart';
 
 class ListHadist extends StatelessWidget {
@@ -36,16 +37,19 @@ class ListHadist extends StatelessWidget {
               ],
             ),
             body: ListView.builder(
-              itemCount: HaditsData.length,
+              itemCount: haditsdata.length,
               itemBuilder: (context, index) {
-                final Hadits place = HaditsData[index];
+                final Hadits place = haditsdata[index];
 
                 return InkWell(
-                    // onTap: () {
-                    //   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    //     return DetailScreen(place: place,);
-                    //   }));
-                    // },
+                  onTap: () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(
+                          builder: (context) {
+                        return HaditsTampil(arab: place,);
+                      }));
+                    },
                     child: Container(
                       
                         height: 90,
@@ -65,6 +69,18 @@ class ListHadist extends StatelessWidget {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              
+                                   Column(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                   
+                                    children: [
+                                      
+                                        Text(place.number.toString(),
+                                        textAlign: TextAlign.left,
+                                        )
+                                        
+                                    ],
+                                  ),
                               Expanded(
                                 flex: 5,
                                 child: Column(
@@ -81,22 +97,7 @@ class ListHadist extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              Expanded(
-                                flex: 2,
-                                child: Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Text(
-                                        place.number,
-                                        style: TextStyle(color: Colors.black, fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
+                             
                             ],
                           ),
                         )));

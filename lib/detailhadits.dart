@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ulangan_harian/model/AlquranModel.dart';
-import 'package:ulangan_harian/listquran.dart';
+import 'package:ulangan_harian/main.dart';
+import 'package:ulangan_harian/listhadits.dart';
+import 'package:ulangan_harian/model/HaditsModel.dart';
 
 
+class HaditsTampil extends StatelessWidget {
 
-class AyatTampil extends StatelessWidget {
-
-  final Alquran ayat;
-  AyatTampil({required this.ayat});
+  final Hadits arab;
+  HaditsTampil({required this.arab});
 
   
   @override
@@ -46,11 +46,11 @@ class AyatTampil extends StatelessWidget {
               ],
             ),
              body: ListView.builder(
-                   itemCount: ayat.ayat.length,
-                   itemBuilder: (context, index) {   
+              itemCount: haditsdata.length,
+              itemBuilder: (context, index) {
                
                 return Container(
-                        height: 350,
+                        height: 400,
                          decoration: BoxDecoration(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25.0)),
@@ -71,17 +71,7 @@ class AyatTampil extends StatelessWidget {
 
                                
 
-                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
                                    
-                                    children: [
-                                      
-                                        Text(ayat.ayat[index].aya_number.toString(),
-                                        textAlign: TextAlign.left,
-                                        )
-                                        
-                                    ],
-                                  ),
                                 
                              
                               Expanded(
@@ -94,7 +84,7 @@ class AyatTampil extends StatelessWidget {
 
                                       
                                     Text(
-                                      ayat.ayat[index].aya_text,
+                                      arab.arab,
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 20.0,
@@ -106,7 +96,7 @@ class AyatTampil extends StatelessWidget {
                                       height: 10,
                                     ),
                                     Text(
-                                      ayat.ayat[index].translation_aya_text,
+                                      arab.id,
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 18.0,
