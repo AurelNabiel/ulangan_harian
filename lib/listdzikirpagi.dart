@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/model/DzikirPagi.dart';
-import 'package:ulangan_harian/main.dart';
 
 
 class ListDzikirPagi extends StatelessWidget {
