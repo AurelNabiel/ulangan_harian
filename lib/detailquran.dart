@@ -4,13 +4,10 @@ import 'package:ulangan_harian/model/AlquranModel.dart';
 import 'package:ulangan_harian/listquran.dart';
 import 'package:ulangan_harian/model/DzikirPagi.dart';
 
-
 class AyatTampil extends StatelessWidget {
-
   final Alquran ayat;
   AyatTampil({required this.ayat});
 
-  
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -44,12 +41,10 @@ class AyatTampil extends StatelessWidget {
                 ),
               ],
             ),
-             body: ListView.builder(
-                   itemCount: ayat.ayat.length,
-                   itemBuilder: (context, index) {   
-               
+            body: ListView.builder(
+              itemCount: ayat.ayat.length,
+              itemBuilder: (context, index) {
                 return InkWell(
-                    
                     child: Container(
                         height: 90,
                         margin: const EdgeInsets.symmetric(
@@ -91,7 +86,6 @@ class AyatTampil extends StatelessWidget {
                                           fontFamily: 'Oxygen'),
                                     ),
                                   ],
-
                                 ),
                               ),
                               Expanded(
@@ -103,7 +97,7 @@ class AyatTampil extends StatelessWidget {
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Text(
-                                         ayat.ayat[index].translation_aya_text,
+                                        ayat.ayat[index].translation_aya_text,
                                         style: TextStyle(
                                             color: Colors.black,
                                             fontSize: 32.0,
@@ -118,14 +112,9 @@ class AyatTampil extends StatelessWidget {
                           ),
                         )));
               },
-            )
-             
-             )
-        );
+            )));
   }
-
-
-  }
+}
 
 
 // var information Text( 

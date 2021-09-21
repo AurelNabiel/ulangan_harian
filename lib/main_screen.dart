@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/listdzikirpagi.dart';
 import 'package:ulangan_harian/listhadits.dart';
@@ -104,8 +103,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-
-),
+            ),
           )
         ],
       ),

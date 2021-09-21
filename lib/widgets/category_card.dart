@@ -5,7 +5,7 @@ import 'package:ulangan_harian/constants.dart';
 class CategoryCard extends StatelessWidget {
   final String logo;
   final String title;
-  final Function press;
+  final VoidCallback press;
   const CategoryCard({
     Key? key,
     required this.logo,
@@ -34,6 +34,7 @@ class CategoryCard extends StatelessWidget {
         child: Material(
           color: Colors.transparent,
           child: InkWell(
+            onTap: press,
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
