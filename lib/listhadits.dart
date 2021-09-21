@@ -80,7 +80,7 @@ class ListHadist extends StatelessWidget {
                                       height: 10,
                                     ),
                                     Text(
-                                      ,
+                                      place.number,
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 18.0,
