@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/model/AlquranModel.dart';
+import 'package:ulangan_harian/detailquran.dart';
 
 class ListQuran extends StatelessWidget {
   @override
@@ -40,16 +41,19 @@ class ListQuran extends StatelessWidget {
       
                                   
 
-            body: ListView.builder(
+           body: ListView.builder(
               itemCount: data.length,
               itemBuilder: (context, index) {
                 final Alquran place = data[index];
                 return InkWell(
-                    // onTap: () {
-                    //   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    //     return DetailScreen(place: place,);
-                    //   }));
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(
+                          builder: (context) {
+                        return AyatTampil(ayat: place,);
+                      }));
+                    },
                     child: Container(
                         height: 90,
                         margin: const EdgeInsets.symmetric(
