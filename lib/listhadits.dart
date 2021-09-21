@@ -47,6 +47,7 @@ class ListHadist extends StatelessWidget {
                     //   }));
                     // },
                     child: Container(
+                      
                         height: 90,
                         margin: const EdgeInsets.symmetric(
                             horizontal: 20, vertical: 10),
@@ -65,7 +66,7 @@ class ListHadist extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
-                                flex: 2,
+                                flex: 5,
                                 child: Column(
                                   children: [
                                     Text(
@@ -76,16 +77,7 @@ class ListHadist extends StatelessWidget {
                                           fontWeight: FontWeight.bold,
                                           fontFamily: 'Oxygen'),
                                     ),
-                                    SizedBox(
-                                      height: 10,
-                                    ),
-                                    Text(
-                                      place.number,
-                                      style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 18.0,
-                                          fontFamily: 'Oxygen'),
-                                    ),
+                                   
                                   ],
                                 ),
                               ),
@@ -97,10 +89,10 @@ class ListHadist extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      // Text(
-                                      //   place.surat_text,
-                                      //   style: TextStyle(color: Colors.black, fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
-                                      // ),
+                                      Text(
+                                        place.number,
+                                        style: TextStyle(color: Colors.black, fontSize: 32.0, fontWeight: FontWeight.bold, fontFamily: 'Oxygen'),
+                                      ),
                                     ],
                                   ),
                                 ),
