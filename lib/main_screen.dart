@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/listdzikirpagi.dart';
+import 'package:ulangan_harian/listdzikirpetang.dart';
 import 'package:ulangan_harian/listhadits.dart';
 import 'package:ulangan_harian/listquran.dart';
 import 'package:ulangan_harian/widgets/category_card.dart';
@@ -96,7 +97,14 @@ class HomeScreen extends StatelessWidget {
                         CategoryCard(
                           title: "Dzikir Sore",
                           logo: "assets/image/2.png",
-                          press: () {},
+                          press: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return ListDzikirPetang();
+                              }),
+                            );
+                          },
                         ),
                       ],
                     ),
