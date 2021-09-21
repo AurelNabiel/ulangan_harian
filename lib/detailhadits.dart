@@ -1,13 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ulangan_harian/model/AlquranModel.dart';
-import 'package:ulangan_harian/listquran.dart';
+import 'package:ulangan_harian/main.dart';
+import 'package:ulangan_harian/listhadits.dart';
+import 'package:ulangan_harian/model/HaditsModel.dart';
 
 
-class AyatTampil extends StatelessWidget {
-  final Alquran ayat;
-  AyatTampil({required this.ayat});
+class HaditsTampil extends StatelessWidget {
 
+  final Hadits arab;
+  HaditsTampil({required this.arab});
+
+  
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -42,25 +45,13 @@ class AyatTampil extends StatelessWidget {
                 ),
               ],
             ),
-<<<<<<< HEAD
-            body: ListView.builder(
-              itemCount: ayat.ayat.length,
-              itemBuilder: (context, index) {
-                return InkWell(
-                    child: Container(
-                        height: 90,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 10),
-                        decoration: BoxDecoration(
-=======
              body: ListView.builder(
-                   itemCount: ayat.ayat.length,
-                   itemBuilder: (context, index) {   
+              itemCount: haditsdata.length,
+              itemBuilder: (context, index) {
                
                 return Container(
-                        height: 350,
+                        height: 400,
                          decoration: BoxDecoration(
->>>>>>> 74507612aaff84ff0d5bb097f9594e7004ce1c12
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25.0)),
                             color: Colors.white,
@@ -80,17 +71,7 @@ class AyatTampil extends StatelessWidget {
 
                                
 
-                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
                                    
-                                    children: [
-                                      
-                                        Text(ayat.ayat[index].aya_number.toString(),
-                                        textAlign: TextAlign.left,
-                                        )
-                                        
-                                    ],
-                                  ),
                                 
                              
                               Expanded(
@@ -103,7 +84,7 @@ class AyatTampil extends StatelessWidget {
 
                                       
                                     Text(
-                                      ayat.ayat[index].aya_text,
+                                      arab.arab,
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 20.0,
@@ -115,7 +96,7 @@ class AyatTampil extends StatelessWidget {
                                       height: 10,
                                     ),
                                     Text(
-                                      ayat.ayat[index].translation_aya_text,
+                                      arab.id,
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 18.0,
@@ -123,39 +104,23 @@ class AyatTampil extends StatelessWidget {
                                           textAlign: TextAlign.left,
                                     ),
                                   ],
+
                                 ),
                               ),
-<<<<<<< HEAD
-                              Expanded(
-                                flex: 2,
-                                child: Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Text(
-                                        ayat.ayat[index].translation_aya_text,
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontSize: 32.0,
-                                            fontWeight: FontWeight.bold,
-                                            fontFamily: 'Oxygen'),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-=======
->>>>>>> 74507612aaff84ff0d5bb097f9594e7004ce1c12
                               ),
                              
                             ],
                           ),
                         ));
               },
-            )));
+            )
+             
+             )
+        );
   }
-}
+
+
+  }
 
 
 // var information Text( 
