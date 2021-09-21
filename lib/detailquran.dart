@@ -1,6 +1,6 @@
-// import 'package:flutter/cupertino.dart';
-// import 'package:flutter/material.dart';
-// import 'package:ulangan_harian/model/AlquranModel.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:ulangan_harian/model/AlquranModel.dart';
 
 // var informationTextStyle = TextStyle(fontFamily: 'Oxygen');
 

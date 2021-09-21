@@ -69,7 +69,7 @@ class ListHadist extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Text(
-                                      place.arab,
+                                      place.nama,
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 20.0,
@@ -80,7 +80,7 @@ class ListHadist extends StatelessWidget {
                                       height: 10,
                                     ),
                                     Text(
-                                      place.id,
+                                      ,
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 18.0,
