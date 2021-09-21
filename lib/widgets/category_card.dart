@@ -47,7 +47,7 @@ class CategoryCard extends StatelessWidget {
                     style: Theme.of(context)
                         .textTheme
                         // ignore: deprecated_member_use
-                        .title!
+                        .headline6!
                         .copyWith(fontSize: 15),
                   )
                 ],

@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/main_screen.dart';
+import 'package:ulangan_harian/listquran.dart';
+import 'package:ulangan_harian/listdzikirpagi.dart';
+import 'package:ulangan_harian/listdzikirpetang.dart';
 
 // import 'detail_screen.dart';
 
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Advance Muslim',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
+      home: (),
     );
   }
 }
