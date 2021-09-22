@@ -15,14 +15,23 @@ class HaditsTampil extends StatelessWidget {
             backgroundColor: Color(0xFF21BFBD),
             appBar: AppBar(
               title: Center(
+                // child: Text(
+                //   "Daftar Surat",
+                //   textAlign: TextAlign.right,
+                //   style: TextStyle(
+                //       color: Colors.white,
+                //       fontSize: 30,
+                //       fontWeight: FontWeight.bold,
+                //       fontFamily: 'Oxygen'),
+                // ),
                 child: Text(
-                  "Daftar Surat",
-                  textAlign: TextAlign.right,
+                  arab.nama,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Oxygen'),
+                  textAlign: TextAlign.right,
                 ),
               ),
               elevation: 0,
@@ -48,7 +57,7 @@ class HaditsTampil extends StatelessWidget {
                   margin:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   // decoration: BoxDecoration(
-                    
+
                   //     borderRadius: BorderRadius.all(Radius.circular(25.0)),
                   //     color: Colors.white,
                   //     boxShadow: [
@@ -63,31 +72,29 @@ class HaditsTampil extends StatelessWidget {
                           Expanded(
                               flex: 2,
                               child: Padding(
-                                    padding: EdgeInsets.all(10.0),
-                              child: Column(children: [
-                                Text(
-                                  arab.arab,
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Oxygen'),
-                                  textAlign: TextAlign.right,
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  arab.id,
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 18.0,
-                                      fontFamily: 'Oxygen'),
-                                  textAlign: TextAlign.left,
-                                ),
-                              ])
-                          )
-                              )
+                                  padding: EdgeInsets.all(10.0),
+                                  child: Column(children: [
+                                    Text(
+                                      arab.arab,
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: 'Oxygen'),
+                                      textAlign: TextAlign.right,
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      arab.id,
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 18.0,
+                                          fontFamily: 'Oxygen'),
+                                      textAlign: TextAlign.left,
+                                    ),
+                                  ])))
                         ],
                       ))),
             )));

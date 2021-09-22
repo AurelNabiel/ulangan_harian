@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Advance Muslim',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: ListHadist(),
+      home: ListQuran(),
     );
   }
 }

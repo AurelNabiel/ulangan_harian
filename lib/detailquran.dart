@@ -16,13 +16,13 @@ class AyatTampil extends StatelessWidget {
             appBar: AppBar(
               title:  Center(
                 child: Text(
-                  "Daftar Surat",
-                  textAlign: TextAlign.right,
+                  ayat.surat_name,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Oxygen'),
+                  textAlign: TextAlign.right,
                 ),
               ),
               elevation: 0,
