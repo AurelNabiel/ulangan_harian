@@ -48,7 +48,7 @@ class AyatTampil extends StatelessWidget {
                    itemBuilder: (context, index) {   
                
                 return Container(
-                        height: 350,
+                        height: 450,
                          decoration: BoxDecoration(
 
                             borderRadius:

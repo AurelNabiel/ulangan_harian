@@ -12,7 +12,7 @@ class HaditsTampil extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            backgroundColor: Color(0xFF21BFBD),
+            backgroundColor: Colors.white,
             appBar: AppBar(
               title: Center(
                 // child: Text(
@@ -53,7 +53,7 @@ class HaditsTampil extends StatelessWidget {
             ),
             body: SingleChildScrollView(
               child: Container(
-                  height: 2800,
+                  height: 3500,
                   margin:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   // decoration: BoxDecoration(
@@ -78,7 +78,7 @@ class HaditsTampil extends StatelessWidget {
                                       arab.arab,
                                       style: TextStyle(
                                           color: Colors.black,
-                                          fontSize: 20.0,
+                                          fontSize: 25.0,
                                           fontWeight: FontWeight.bold,
                                           fontFamily: 'Oxygen'),
                                       textAlign: TextAlign.right,
