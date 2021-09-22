@@ -7,7 +7,7 @@ class Hadits {
   Hadits({required this.number, required this.nama, required this.arab, required this.id});
 }
 
-var HaditsData = [
+var haditsdata = [
   Hadits(
     nama: "Tentang Mudzalifah",
       number: "1",

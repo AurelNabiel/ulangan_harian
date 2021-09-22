@@ -2,29 +2,27 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/model/AlquranModel.dart';
 import 'package:ulangan_harian/listquran.dart';
-import 'package:ulangan_harian/model/DzikirPagi.dart';
 
 
 class AyatTampil extends StatelessWidget {
-
   final Alquran ayat;
   AyatTampil({required this.ayat});
 
-  
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
             backgroundColor: Color(0xFF21BFBD),
             appBar: AppBar(
-              title: const Center(
+              title:  Center(
                 child: Text(
-                  "Daftar Surat",
+                  ayat.surat_name,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Oxygen'),
+                  textAlign: TextAlign.right,
                 ),
               ),
               elevation: 0,
@@ -44,17 +42,15 @@ class AyatTampil extends StatelessWidget {
                 ),
               ],
             ),
+
              body: ListView.builder(
                    itemCount: ayat.ayat.length,
                    itemBuilder: (context, index) {   
                
-                return InkWell(
-                    
-                    child: Container(
-                        height: 90,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 10),
-                        decoration: BoxDecoration(
+                return Container(
+                        height: 350,
+                         decoration: BoxDecoration(
+
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25.0)),
                             color: Colors.white,
@@ -63,15 +59,39 @@ class AyatTampil extends StatelessWidget {
                                   color: Colors.black.withAlpha(300),
                                   blurRadius: 10.0),
                             ]),
+                        // margin: const EdgeInsets.symmetric(
+                        //     horizontal: 10, vertical: 10),
+                       
                         child: Padding(
                           padding: EdgeInsets.all(10.0),
                           child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
+
+                               
+
+                                   Column(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                   
+                                    children: [
+                                      
+                                        Text(ayat.ayat[index].aya_number.toString(),
+                                        textAlign: TextAlign.left,
+                                        )
+                                        
+                                    ],
+                                  ),
+                                
+                             
                               Expanded(
+                                
                                 flex: 2,
+                                child: Padding(
+                                  padding: EdgeInsets.all(4.0),
                                 child: Column(
                                   children: [
+
+                                      
                                     Text(
                                       ayat.ayat[index].aya_text,
                                       style: TextStyle(
@@ -79,6 +99,7 @@ class AyatTampil extends StatelessWidget {
                                           fontSize: 20.0,
                                           fontWeight: FontWeight.bold,
                                           fontFamily: 'Oxygen'),
+                                          textAlign: TextAlign.right,
                                     ),
                                     SizedBox(
                                       height: 10,
@@ -89,43 +110,21 @@ class AyatTampil extends StatelessWidget {
                                           color: Colors.black,
                                           fontSize: 18.0,
                                           fontFamily: 'Oxygen'),
+                                          textAlign: TextAlign.left,
                                     ),
                                   ],
+                                ),
+                              ),
 
-                                ),
+                             
                               ),
-                              Expanded(
-                                flex: 2,
-                                child: Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Text(
-                                         ayat.ayat[index].translation_aya_text,
-                                        style: TextStyle(
-                                            color: Colors.black,
-                                            fontSize: 32.0,
-                                            fontWeight: FontWeight.bold,
-                                            fontFamily: 'Oxygen'),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
+                            ]
                           ),
-                        )));
+                        ));
               },
-            )
-             
-             )
-        );
+            )));
   }
-
-
-  }
+}
 
 
 // var information Text( 
