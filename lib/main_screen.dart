@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
         children: <Widget>[
           Container(
             // Here the height of the container is 45% of our total height
-            height: size.height * .45,
+            height: size.height * .37,
             decoration: BoxDecoration(
               color: Color(0xFF21BFBD),
               image: DecorationImage(
@@ -51,12 +51,15 @@ class HomeScreen extends StatelessWidget {
                         .headline4!
                         .copyWith(fontWeight: FontWeight.w900),
                   ),
+                  SizedBox(
+                    height: 250,
+                  ),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
                       childAspectRatio: .85,
-                      crossAxisSpacing: 20,
-                      mainAxisSpacing: 20,
+                      crossAxisSpacing: 15,
+                      mainAxisSpacing: 15,
                       children: <Widget>[
                         CategoryCard(
                           title: "Al-quran",

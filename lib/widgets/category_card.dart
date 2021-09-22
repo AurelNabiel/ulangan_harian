@@ -20,6 +20,7 @@ class CategoryCard extends StatelessWidget {
       child: Container(
         // padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
+          border: Border.all(color: Colors.white),
           color: Colors.white,
           borderRadius: BorderRadius.circular(13),
           boxShadow: [
@@ -32,11 +33,11 @@ class CategoryCard extends StatelessWidget {
           ],
         ),
         child: Material(
-          color: Colors.transparent,
+          color: Color(0xFF21BFBD),
           child: InkWell(
             onTap: press,
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Column(
                 children: <Widget>[
                   Spacer(),
@@ -49,7 +50,7 @@ class CategoryCard extends StatelessWidget {
                         .textTheme
                         // ignore: deprecated_member_use
                         .headline6!
-                        .copyWith(fontSize: 15),
+                        .copyWith(fontSize: 25),
                   )
                 ],
               ),

@@ -42,16 +42,15 @@ class ListHadist extends StatelessWidget {
                 final Hadits place = haditsdata[index];
 
                 return InkWell(
-                  onTap: () {
-                      Navigator.push(
-                        context, 
-                        MaterialPageRoute(
-                          builder: (context) {
-                        return HaditsTampil(arab: place,);
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return HaditsTampil(
+                          arab: place,
+                        );
                       }));
                     },
                     child: Container(
-                      
                         height: 90,
                         margin: const EdgeInsets.symmetric(
                             horizontal: 20, vertical: 10),
@@ -69,18 +68,15 @@ class ListHadist extends StatelessWidget {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              
-                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                   
-                                    children: [
-                                      
-                                        Text(place.number.toString(),
-                                        textAlign: TextAlign.left,
-                                        )
-                                        
-                                    ],
-                                  ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    place.number.toString(),
+                                    textAlign: TextAlign.left,
+                                  )
+                                ],
+                              ),
                               Expanded(
                                 flex: 5,
                                 child: Column(
@@ -93,11 +89,9 @@ class ListHadist extends StatelessWidget {
                                           fontWeight: FontWeight.bold,
                                           fontFamily: 'Oxygen'),
                                     ),
-                                   
                                   ],
                                 ),
                               ),
-                             
                             ],
                           ),
                         )));
