@@ -51,7 +51,9 @@ class HomeScreen extends StatelessWidget {
                         .headline4!
                         .copyWith(fontWeight: FontWeight.w900),
                   ),
-                  SizedBox(height: 250,),
+                  SizedBox(
+                    height: 250,
+                  ),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,

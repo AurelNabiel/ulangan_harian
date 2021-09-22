@@ -36,22 +36,17 @@ class ListQuran extends StatelessWidget {
                 ),
               ],
             ),
-
-
-      
-                                  
-
-           body: ListView.builder(
+            body: ListView.builder(
               itemCount: data.length,
               itemBuilder: (context, index) {
                 final Alquran place = data[index];
                 return InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context, 
-                        MaterialPageRoute(
-                          builder: (context) {
-                        return AyatTampil(ayat: place,);
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return AyatTampil(
+                          ayat: place,
+                        );
                       }));
                     },
                     child: Container(
@@ -95,7 +90,6 @@ class ListQuran extends StatelessWidget {
                                           fontFamily: 'Oxygen'),
                                     ),
                                   ],
-
                                 ),
                               ),
                               Expanded(

@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ulangan_harian/main.dart';
-import 'package:ulangan_harian/listhadits.dart';
 import 'package:ulangan_harian/model/HaditsModel.dart';
 
 class HaditsTampil extends StatelessWidget {
@@ -15,15 +13,6 @@ class HaditsTampil extends StatelessWidget {
             backgroundColor: Colors.white,
             appBar: AppBar(
               title: Center(
-                // child: Text(
-                //   "Daftar Surat",
-                //   textAlign: TextAlign.right,
-                //   style: TextStyle(
-                //       color: Colors.white,
-                //       fontSize: 30,
-                //       fontWeight: FontWeight.bold,
-                //       fontFamily: 'Oxygen'),
-                // ),
                 child: Text(
                   arab.nama,
                   style: TextStyle(
@@ -102,13 +91,3 @@ class HaditsTampil extends StatelessWidget {
 }
 
 
-// var information Text( 
-//   'Open Everyday',
-//   style: informationTextStyle,
-// )
-
-
-           //  child: ListView.builder(
-                //    itemCount: ayat.ayat.length,
-                //    itemBuilder: (context, index) {               
-                 
