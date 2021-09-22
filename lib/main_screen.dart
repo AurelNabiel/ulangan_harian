@@ -84,7 +84,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Dzikir Pagi",
-                          logo: "assets/image/2.png",
+                          logo: "assets/image/3.png",
                           press: () {
                             Navigator.push(
                               context,
@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Dzikir Sore",
-                          logo: "assets/image/2.png",
+                          logo: "assets/image/4.png",
                           press: () {
                             Navigator.push(
                               context,
