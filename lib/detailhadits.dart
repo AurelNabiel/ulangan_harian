@@ -71,80 +71,76 @@ class HaditsTampil extends StatelessWidget {
             )),
           
               body: SingleChildScrollView(
+                 child: Container(
+                      
                 child: Padding(
               padding: EdgeInsets.all(15.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  Text(arab.arab,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 30.0, 
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black
-                        )),
+                  Container(
+                      height: 400,
+                            margin: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(
+                     
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20.0)),
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withAlpha(500),
+                                  blurRadius: 20.0),
+                            ]),
+                             child: Padding(
+                          padding: EdgeInsets.all(25.0),
+                    child: Text(arab.arab,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 30.0, 
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black
+                          )),
+                             )
+                  ),
                   SizedBox(
                     height: 20,
                   ),
-                  Text(
-                   arab.id,
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Oxygen'),
-                    textAlign: TextAlign.left,
+                  
+                  Container(
+                   
+                    child: Text(
+                     arab.id,
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Oxygen'),
+                      textAlign: TextAlign.left,
+                    ),
                   ),
                 ],
               ),
+             
+                                  // child: Column(
+                                  //   crossAxisAlignment: CrossAxisAlignment.end,
+                                  //   mainAxisSize: MainAxisSize.min,
+                                  //   children: [
+                                  //     Text(
+                                  //       place.surat_text,
+                                  //       style: TextStyle(
+                                  //           color: Colors.black,
+                                  //           fontSize: 32.0,
+                                  //           fontWeight: FontWeight.bold,
+                                  //           fontFamily: 'Oxygen'),
+                                  //     ),
+                                  //   ],
+                                  // ),
+                                
+                              
             )
-                  // decoration: BoxDecoration(
-
-                  //     borderRadius: BorderRadius.all(Radius.circular(25.0)),
-                  //     color: Colors.white,
-                  //     boxShadow: [
-                  //       BoxShadow(
-                  //           color: Colors.black.withAlpha(300), blurRadius: 10.0),
-                  //     ]),
-                  // child: Padding(
-                  //     padding: EdgeInsets.all(5.0),
-                  //     child: Row(
-                  //       crossAxisAlignment: CrossAxisAlignment.start,
-                  //       children: [
-                  //         Expanded(
-                  //             flex: 2,
-                  //             child: Padding(
-                  //                 padding: EdgeInsets.all(10.0),
-                  //                 child: Column(children: [
-                  //                   Text(
-                  //                     arab.arab,
-                  //                     style: TextStyle(
-                  //                         color: Colors.black,
-                  //                         fontSize: 25.0,
-                  //                         fontWeight: FontWeight.bold,
-                  //                         fontFamily: 'Oxygen'),
-                  //                     textAlign: TextAlign.right,
-                  //                   ),
-                  //                   SizedBox(
-                  //                     height: 10,
-                  //                   ),
-                  //                   Text(
-                  //                     arab.id,
-                  //                     style: TextStyle(
-                  //                         color: Colors.black,
-                  //                         fontSize: 18.0,
-                  //                         fontFamily: 'Oxygen'),
-                  //                     textAlign: TextAlign.left,
-                  //                   ),
-                  //                 ]
-                                  
-                  //                 )
-                  //                 )
-                  //                 )
-                  //       ],
-                  //     )
-                  //     )
-                        
+                
+              )           
         ),
   
     

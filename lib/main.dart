@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ulangan_harian/listhadits.dart';
 import 'package:ulangan_harian/main_screen.dart';
 
 // import 'detail_screen.dart';
