@@ -83,7 +83,8 @@ class AyatTampil extends StatelessWidget {
                 children: <Widget>[
                   Text(ayat.ayat[index].aya_text,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20.0, color: Colors.black)),
+                      
+                      style: TextStyle(fontSize: 30.0, color: Colors.black,  fontWeight: FontWeight.bold,)),
                   SizedBox(
                     height: 20,
                   ),
@@ -92,6 +93,7 @@ class AyatTampil extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 18.0,
+                         fontWeight: FontWeight.bold,
                         fontFamily: 'Oxygen'),
                     textAlign: TextAlign.center,
                   ),
