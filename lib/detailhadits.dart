@@ -79,7 +79,7 @@ class HaditsTampil extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Container(
-                      height: 400,
+                      
                             margin: const EdgeInsets.symmetric(
                             horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(
