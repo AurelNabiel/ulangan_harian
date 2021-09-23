@@ -52,8 +52,8 @@ class ListHadist extends StatelessWidget {
                     },
                     child: Container(
                         height: 100,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 20),
+                       margin: const EdgeInsets.symmetric(
+                            horizontal: 30, vertical: 15),
                         decoration: BoxDecoration(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(20.0)),

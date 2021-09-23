@@ -10,33 +10,63 @@ class ListDzikirPetang extends StatelessWidget {
         child: Scaffold(
             backgroundColor: Color(0xFF21BFBD),
             appBar: AppBar(
-              title: const Center(
-                child: Text(
-                  "Daftar Surat",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Oxygen'),
-                ),
-              ),
-              elevation: 0,
-              backgroundColor: Color(0xFF00695C),
-              leading: IconButton(
-                icon: Icon(Icons.menu_book, color: Colors.white),
+            elevation: 15,
+            backgroundColor: Color(0xFF21BFBD),
+            centerTitle: true,
+            leading: IconButton(
+              icon: Icon(Icons.menu_book, color: Colors.white),
+              onPressed: () {},
+            ),
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(Icons.search, color: Colors.white),
                 onPressed: () {},
               ),
-              actions: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.search, color: Colors.white),
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.person, color: Colors.white),
-                  onPressed: () {},
-                ),
-              ],
+              IconButton(
+                icon: Icon(Icons.person, color: Colors.white),
+                onPressed: () {},
+              ),
+            ],
+            flexibleSpace: ClipRRect(
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(200),
+                  bottomRight: Radius.circular(200)),
+              child: Container(
+                decoration: BoxDecoration(
+                    gradient: RadialGradient(
+                        colors: [Color(0xff083EF6), Color(0xff008DFF)])),
+              ),
             ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(200),
+                  bottomRight: Radius.circular(200)),
+            ),
+            bottom: PreferredSize(
+              preferredSize: Size.fromHeight(50),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        "Dzikir Petang",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 40,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Oxygen'),
+                        textAlign: TextAlign.center,
+                      ),
+                       
+                    ],
+                  ),
+                ],
+              ),
+            )),
             body: ListView.builder(
               padding: EdgeInsets.symmetric(vertical: 30.0),
               //  scrollDirection: Axis.horizontal,

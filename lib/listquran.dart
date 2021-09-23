@@ -50,8 +50,9 @@ class ListQuran extends StatelessWidget {
                       }));
                     },
                     child: Container(
+                      height: 100,
                         margin: const EdgeInsets.symmetric(
-                            horizontal: 50, vertical: 40),
+                            horizontal: 30, vertical: 15),
                         decoration: BoxDecoration(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(20.0)),
