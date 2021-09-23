@@ -65,3 +65,12 @@ flutter:
           weight: 700
         - asset: fonts/Cairo-Black.ttf
           weight: 900
+    - family: Al Qalam
+      fonts:
+        - asset: fonts/Al Qalam Quran.ttf
+    - family: me_quran
+      fonts:
+        - asset: fonts/me_quran Regular.ttf
+    - family: AlQuranAli
+      fonts:
+        - asset: fonts/AlQuranAli-L3A83.ttf

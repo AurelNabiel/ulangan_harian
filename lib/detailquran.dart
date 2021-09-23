@@ -68,14 +68,17 @@ class AyatTampil extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text(
-                                  ayat.ayat[index].aya_number.toString(),
-                                  style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 20.0,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: 'Oxygen'),
-                                  textAlign: TextAlign.left,
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 50),
+                                  child: Text(
+                                    ayat.ayat[index].aya_number.toString(),
+                                    style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 30.0,
+                                            fontWeight: FontWeight.bold,
+                                            fontFamily: 'AlQuranAli'),
+                                    textAlign: TextAlign.left,
+                                  ),
                                 )
                               ],
                             ),

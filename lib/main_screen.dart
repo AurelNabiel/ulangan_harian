@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/listdzikirpagi.dart';
 import 'package:ulangan_harian/listdzikirpetang.dart';
@@ -8,9 +10,68 @@ import 'package:ulangan_harian/widgets/category_card.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    
+    
     var size = MediaQuery.of(context)
-        .size; //this gonna give us total height and with of our device
-    return Scaffold(
+        .size;
+          return WillPopScope(
+      onWillPop: () async {
+        showDialog(
+          context: context,
+          builder: (context) => new AlertDialog(
+            title: Text('Are you sure?'),
+            content: Text('Do you want to exit an App'),
+            actions: [
+              GestureDetector(
+                onTap: () => Navigator.of(context).pop(false),
+                child: Container(
+                  padding: EdgeInsets.only(
+                    left: 20,
+                    right: 20,
+                    top: 20 / 2,
+                    bottom: 20 / 2,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20 / 2),
+                    color: Colors.red,
+                  ),
+                  child: Text(
+                    "NO",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 16),
+              GestureDetector(
+                onTap: () => exit(0),
+                child: Container(
+                  padding: EdgeInsets.only(
+                    left: 20,
+                    right: 20,
+                    top: 20 / 2,
+                    bottom: 20 / 2,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20 / 2),
+                    color: Colors.purple,
+                  ),
+                  child: Text(
+                    "YES",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+        return Future.value(true);
+      },
+         //this gonna give us total height and with of our device
+    child:  Scaffold(
       body: Stack(
         children: <Widget>[
           Container(
@@ -118,6 +179,7 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
+    )
     );
   }
 }
