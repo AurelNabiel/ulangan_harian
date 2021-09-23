@@ -51,17 +51,17 @@ class ListHadist extends StatelessWidget {
                       }));
                     },
                     child: Container(
-                        height: 90,
+                        height: 100,
                         margin: const EdgeInsets.symmetric(
-                            horizontal: 20, vertical: 10),
+                            horizontal: 10, vertical: 20),
                         decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.all(Radius.circular(25.0)),
+                                BorderRadius.all(Radius.circular(20.0)),
                             color: Colors.white,
                             boxShadow: [
                               BoxShadow(
-                                  color: Colors.black.withAlpha(300),
-                                  blurRadius: 10.0),
+                                  color: Colors.black.withAlpha(500),
+                                  blurRadius: 20.0),
                             ]),
                         child: Padding(
                           padding: EdgeInsets.all(10.0),
