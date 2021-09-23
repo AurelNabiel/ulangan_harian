@@ -57,6 +57,7 @@ class AyatTampil extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
+                      
                       Text(
                         ayat.surat_text,
                         style: TextStyle(
@@ -81,6 +82,13 @@ class AyatTampil extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text(ayat.ayat[index].aya_number.toString(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 30.0, color: Colors.black,  fontWeight: FontWeight.bold,fontFamily: 'AlQuranAli' )
+                    ),
+                  ),
                   Text(ayat.ayat[index].aya_text,
                       textAlign: TextAlign.center,
                       

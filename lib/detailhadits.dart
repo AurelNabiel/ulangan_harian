@@ -58,7 +58,7 @@ class HaditsTampil extends StatelessWidget {
                         arab.nama,
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 40,
+                            fontSize: 30,
                             fontWeight: FontWeight.bold,
                             fontFamily: 'Oxygen'),
                         textAlign: TextAlign.center,

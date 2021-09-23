@@ -74,6 +74,10 @@ class ListHadist extends StatelessWidget {
                                   Text(
                                     place.number.toString(),
                                     textAlign: TextAlign.left,
+                                    style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 45,
+                            fontFamily: 'AlQuranAli'),
                                   )
                                 ],
                               ),
