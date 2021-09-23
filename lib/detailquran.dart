@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ulangan_harian/model/AlquranModel.dart';
+<<<<<<< HEAD
 import 'package:ulangan_harian/listquran.dart';
-
+=======
+>>>>>>> 85d3f2b5637b644c1234357627861f8f8ff96bad
 
 class AyatTampil extends StatelessWidget {
   final Alquran ayat;
@@ -14,7 +16,7 @@ class AyatTampil extends StatelessWidget {
         child: Scaffold(
             backgroundColor: Color(0xFF21BFBD),
             appBar: AppBar(
-              title:  Center(
+              title: Center(
                 child: Text(
                   ayat.surat_name,
                   style: TextStyle(
@@ -42,56 +44,91 @@ class AyatTampil extends StatelessWidget {
                 ),
               ],
             ),
-
-             body: ListView.builder(
-                   itemCount: ayat.ayat.length,
-                   itemBuilder: (context, index) {   
-               
+            body: ListView.builder(
+              itemCount: ayat.ayat.length,
+              itemBuilder: (context, index) {
                 return Container(
-                        height: 450,
-                         decoration: BoxDecoration(
+<<<<<<< HEAD
+                    height: 350,
+=======
+                    height: 450,
+>>>>>>> 85d3f2b5637b644c1234357627861f8f8ff96bad
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(25.0)),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black.withAlpha(300),
+                              blurRadius: 10.0),
+                        ]),
+                    // margin: const EdgeInsets.symmetric(
+                    //     horizontal: 10, vertical: 10),
 
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(25.0)),
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.black.withAlpha(300),
-                                  blurRadius: 10.0),
-                            ]),
-                        // margin: const EdgeInsets.symmetric(
-                        //     horizontal: 10, vertical: 10),
-                       
-                        child: Padding(
-                          padding: EdgeInsets.all(10.0),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                    child: Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Row(
+<<<<<<< HEAD
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-
-                               
-
-                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                   
-                                    children: [
-                                      
-                                        Text(ayat.ayat[index].aya_number.toString(),
-                                        textAlign: TextAlign.left,
-                                        )
-                                        
-                                    ],
+                              Text(
+                                ayat.ayat[index].aya_number.toString(),
+                                textAlign: TextAlign.left,
+                              )
+                            ],
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Padding(
+                              padding: EdgeInsets.all(4.0),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    ayat.ayat[index].aya_text,
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'Oxygen'),
+                                    textAlign: TextAlign.right,
                                   ),
-                                
-                             
-                              Expanded(
-                                
-                                flex: 2,
-                                child: Padding(
-                                  padding: EdgeInsets.all(4.0),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    ayat.ayat[index].translation_aya_text,
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 18.0,
+                                        fontFamily: 'Oxygen'),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+=======
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text(
+                                  ayat.ayat[index].aya_number.toString(),
+                                  textAlign: TextAlign.left,
+                                )
+                              ],
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: Padding(
+                                padding: EdgeInsets.all(4.0),
                                 child: Column(
                                   children: [
-
-                                      
                                     Text(
                                       ayat.ayat[index].aya_text,
                                       style: TextStyle(
@@ -99,7 +136,7 @@ class AyatTampil extends StatelessWidget {
                                           fontSize: 20.0,
                                           fontWeight: FontWeight.bold,
                                           fontFamily: 'Oxygen'),
-                                          textAlign: TextAlign.right,
+                                      textAlign: TextAlign.right,
                                     ),
                                     SizedBox(
                                       height: 10,
@@ -110,30 +147,16 @@ class AyatTampil extends StatelessWidget {
                                           color: Colors.black,
                                           fontSize: 18.0,
                                           fontFamily: 'Oxygen'),
-                                          textAlign: TextAlign.left,
+                                      textAlign: TextAlign.left,
                                     ),
                                   ],
                                 ),
                               ),
-
-                             
-                              ),
-                            ]
-                          ),
-                        ));
+                            ),
+                          ]),
+>>>>>>> 85d3f2b5637b644c1234357627861f8f8ff96bad
+                    ));
               },
             )));
   }
 }
-
-
-// var information Text( 
-//   'Open Everyday',
-//   style: informationTextStyle,
-// )
-
-
-           //  child: ListView.builder(
-                //    itemCount: ayat.ayat.length,
-                //    itemBuilder: (context, index) {               
-                 

@@ -33,7 +33,7 @@ class CategoryCard extends StatelessWidget {
           ],
         ),
         child: Material(
-          color:Color(0xFF21BFBD),
+          color: Color(0xFF21BFBD),
           child: InkWell(
             onTap: press,
             child: Padding(

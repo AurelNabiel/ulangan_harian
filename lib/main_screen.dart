@@ -51,7 +51,9 @@ class HomeScreen extends StatelessWidget {
                         .headline4!
                         .copyWith(fontWeight: FontWeight.w900),
                   ),
-                  SizedBox(height: 250,),
+                  SizedBox(
+                    height: 250,
+                  ),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
@@ -85,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Dzikir Pagi",
-                          logo: "assets/image/2.png",
+                          logo: "assets/image/3.png",
                           press: () {
                             Navigator.push(
                               context,
@@ -97,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         CategoryCard(
                           title: "Dzikir Sore",
-                          logo: "assets/image/2.png",
+                          logo: "assets/image/4.png",
                           press: () {
                             Navigator.push(
                               context,
