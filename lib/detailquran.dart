@@ -47,7 +47,7 @@ class AyatTampil extends StatelessWidget {
                 return Container(
 
 
-                    height: 450,
+                    height: 600,
 
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(25.0)),
@@ -61,7 +61,7 @@ class AyatTampil extends StatelessWidget {
                     //     horizontal: 10, vertical: 10),
 
                     child: Padding(
-                      padding: EdgeInsets.all(10.0),
+                      padding: EdgeInsets.all(15.0),
                       child: Row(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
@@ -70,6 +70,11 @@ class AyatTampil extends StatelessWidget {
                               children: [
                                 Text(
                                   ayat.ayat[index].aya_number.toString(),
+                                  style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: 'Oxygen'),
                                   textAlign: TextAlign.left,
                                 )
                               ],

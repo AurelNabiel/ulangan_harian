@@ -32,6 +32,7 @@ class CategoryCard extends StatelessWidget {
             ),
           ],
         ),
+        
         child: Material(
           color: Color(0xFF21BFBD),
           child: InkWell(
